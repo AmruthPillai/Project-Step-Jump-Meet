@@ -18,7 +18,6 @@
 		.column:hover {
 			background-color: #507E76;
 			color: #EEE;
-			border-radius: 10px;
 		}
 
 			.column p {
@@ -31,4 +30,55 @@
 
 		.box-disable {
 			background-color: #10423A;
+		}
+
+		.box-selected {
+			background-color: #10423A;
+			color: #FFF;
+		}
+
+.step-counter {
+	margin-top: 100px;
+	text-align: center;
+}
+
+	.step-counter ul {
+		list-style-type: none;
+	}
+
+		.step-counter ul li {
+			width: 25px;
+			height: 25px;
+			font-size: 1.2em;
+			line-height: 25px;
+			display: inline-block;
+		}
+
+		.step-counter ul .selected {
+			background-color: #10423A;
+			color: #FFF;
+			border-radius: 50%;
+		}
+
+.jump-counter {
+	margin-top: 50px;
+	text-align: center;
+}
+
+	.jump-counter ul {
+		list-style-type: none;
+	}
+
+		.jump-counter ul li {
+			width: 25px;
+			height: 25px;
+			font-size: 1.2em;
+			line-height: 25px;
+			display: inline-block;
+		}
+
+		.jump-counter ul .selected {
+			background-color: #10423A;
+			color: #FFF;
+			border-radius: 50%;
 		}
