@@ -1,17 +1,21 @@
 .game-grid {
-	width: 460px;
+	width: inherit;
 	height: 400px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 	.row {
-		width: 460px;
+		width: inherit;
 		height: 80px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 		.column {
 			width: 80px;
 			height: 80px;
+			margin: 0 auto;
 			display: inline-block;
 		}
 
