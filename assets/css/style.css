@@ -1,4 +1,8 @@
-#game-over-overlay {
+html, body {
+	height: 100%;
+}
+
+.game-win {
 	visibility: hidden;
 	width: 100%;
 	height: 100%;
@@ -9,14 +13,34 @@
     z-index: 100;
 }
 
-	#game-over-overlay h1 {
+	.game-win h1 {
 		opacity: 0;
 		color: #FFF;
 	}
 
-	#game-over-overlay h1 a {
-		text-decoration: none;
+		.game-win h1 a {
+			text-decoration: none;
+		}
+
+.game-lose {
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+    background-color: #000;
+    position: fixed;
+    top: 0px; left: 0px;
+    z-index: 100;
+}
+
+	.game-lose h1 {
+		opacity: 0;
+		color: #FFF;
 	}
+
+		.game-lose h1 a {
+			text-decoration: none;
+		}
 
 .game-grid {
 	width: inherit;
@@ -115,4 +139,22 @@
 			background-color: #10423A;
 			color: #FFF;
 			border-radius: 50%;
+		}
+
+footer {
+	margin-top: 50px;
+	width: 100%;
+	height: 2.4em;
+	background-color: #EEE;
+	border-top: 1px solid #DDD;
+}
+
+	footer .copyright {
+		text-align: center;
+		line-height: 2.4em;
+	}
+
+		footer .copyright span {
+			font-size: .8em;
+			color: #555;
 		}
