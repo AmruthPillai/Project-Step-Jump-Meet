@@ -2,6 +2,10 @@ var stepCount = 1;
 
 $(".num-box").click(function() {
 	$(this).toggleClass("box-selected");
+	
+	if ( $(".box-selected").length == 2 ) {
+		$(".box-selected").removeClass("box-selected");
+
 });
 
 $(".num-box").click(function() {
