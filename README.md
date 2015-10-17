@@ -1,5 +1,7 @@
 # Project Step, Jump &amp; Meet
 
+![alt text](https://github.com/AmruthPillai/Project-Step-Jump-Meet/blob/master/assets/images/sample-game-screen.jpg "Sample Game Screen")
+
 Introduction
 -
 A fun and innovative new game that puzzles you to the bone, developed using HTML, CSS &amp; Javascript. Developed by a group of students from Dayananda Sagar Institute, Bangalore.
