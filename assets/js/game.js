@@ -31,7 +31,7 @@ $(".num-box").click(function() {
 		}
 
 		// Increment the Step Counter Selector
-		$(".step-list .selected").toggleClass("selected").next("li").toggleClass("selected");
+		$(".step-list .selected").toggleClass("selected").addClass("animated rollOut").next("li").toggleClass("selected");
 		stepCounter += 1;
 
 		// Change the value of new jumpResult in the box
