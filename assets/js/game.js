@@ -40,15 +40,25 @@ $(".num-box").click(function() {
 		// Remove all selections from the Grid
 		$(".box-selected").removeClass("box-selected");
 
-		// Check if the negativeFlag was turned on, then
+		// Check if the jumpResult is above/below 0, then
 		// Increment the Jump Counter by jumpResult number of times
-		if (negativeFlag == 0) {
-			for (i = 0; i < jumpResult; i++)
+		if (jumpResult > 0) {
+			for (i = 0; i < jumpResult; i++) {
     			$(".jump-list .selected").toggleClass("selected").prev("li").toggleClass("selected");
-    	} else if (negativeFlag == 1) {
-    		for (i = jumpResult; i < 0; i++)
+    			jumpCounter -= 1;
+			}
+    	} else if (jumpResult < 0) {
+    		for (i = jumpResult; i < 0; i++) {
     			$(".jump-list .selected").toggleClass("selected").next("li").toggleClass("selected");
+    			jumpCounter += 1;
+    		}
     	}
+
+    	// If jumpCounter goes over the limits, then game is over
+    	if ( jumpCounter <= 0 || jumpCounter >= 27 ) {
+			$(".game-lose").css("visibility", "visible").children().fadeTo(500, 1);
+			throw new Error("Something went badly wrong!");
+		}
 
     	// If number of steps crosses 26, then stop the game and display losing message overlay
     	if ( stepCounter == 27 ) {
