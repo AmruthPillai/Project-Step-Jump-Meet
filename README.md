@@ -4,7 +4,7 @@
 
 Introduction
 -
-A fun and innovative new game that puzzles you to the bone, developed using HTML, CSS &amp; Javascript. Developed by a group of students from Dayananda Sagar Institute, Bangalore.
+A fun and innovative new game that puzzles you to the bone, developed using HTML, CSS &amp; Javascript.
 
 How to Play?
 -
