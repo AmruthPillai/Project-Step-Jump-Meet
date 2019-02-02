@@ -12,13 +12,3 @@ How to Play?
 * For each two boxes clicked, it counts as a new step, and the step counter increases by one.
 * The resulting box's value will be considered as the jump count, and the jump counter will move back from Z to the number of places as per the result.
 * The **objective of the game is to make both the step counter and jump counter to meet during the game**, having the conditions that *you have only 26 steps and you can't cross out of the jump counter range*.
-
-Credits
--
-Created by
-* Abhay Dixit (@abhayraj95)
-* Amruth Pillai (@AmruthPillai)
-* Awneesh Kishore (@awanishkishore)
-* Krishnangini Kalita
-
-Also, thanks to @jquery and the varied questions on StackOverflow for making this game possible!
